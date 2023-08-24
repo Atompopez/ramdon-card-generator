@@ -1,1 +1,11 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.iconCard{
+    width: 70px;
+    height: 70px;
+}
+.card{
+    height: 100%;
+    width: 350px;
+}
+#number{
+    font-size: 230px;
+}

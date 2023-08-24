@@ -1,11 +1,18 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+const linkImg = [
+  './assets/img/corazon.png',
+  './assets/img/diamante.png',
+  './assets/img/picas.png',
+  './assets/img/trebol.png'
+];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const numberCard = document.getElementById('number');
+const iconCards = Array.from(document.getElementsByClassName('iconCard'));
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+const randomSrcIndex = Math.floor(Math.random() * linkImg.length);
+
+iconCards.forEach(iconCard => {
+  iconCard.src = linkImg[randomSrcIndex];
+});
+
+const randomCardNumber = Math.floor(Math.random() * 9) + 2;
+numberCard.textContent = randomCardNumber;
