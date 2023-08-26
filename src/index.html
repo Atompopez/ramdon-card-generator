@@ -12,13 +12,25 @@
     />
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="d-flex justify-content-center align-items-center bg-success ">
-    <div class="card m-2">
-      <div class="container">
-        <div class="row d-flex justify-content-start p-2"><img class="iconCard p-0" src=""/></div>
-        <div class="row d-flex justify-content-center" id="number"></div>
-        <div class="row d-flex justify-content-end p-2"><img class="iconCard p-0" src=""/></div>
+  <body class="row justify-content-center align-items-center bg-success">
+    <div class="col-4">
+      <div id="card" class="card m-2">
+        <div class="container">
+          <div class="row d-flex justify-content-start p-2"><img class="iconCard p-0" src=""/></div>
+          <div class="row d-flex justify-content-center" id="number"></div>
+          <div class="row d-flex justify-content-end p-2"><img class="iconCard p-0" src=""/></div>
+        </div>
       </div>
+  
+      <div>
+        <button onclick="reload();" type="button" class="btn btn-danger">Reload</button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <input id="inputLargo" type="text" placeholder="Largo">
+      <input id="inputAncho" type="text"placeholder="Ancho" >
+      <button id="boton" type="button" class="btn btn-primary">Change</button>
     </div>
 
     <script
